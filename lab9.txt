@@ -1,0 +1,38 @@
+q1. 
+1]*p3 = S
+3] p3 = 6940
+2]*p3 = T
+4]*p1 = S
+5] p1 = 6940
+
+
+q2.
+Option D 
+*p=75 changes the value of i to 75 
+
+q3. 
+The error is ‘char*’  cannot convert to ‘double*’ in initialization
+ double *p = &c;
+This happens because c is a char variable and p stores double varibles. 
+The correct code should be (double*)&<char>
+
+q4.
+char blocks[3] = {'A','B','C'};
+char *ptr = &blocks[0];
+char temp;
+   
+code                     output
+temp = blocks[0];         [A]
+temp = *(blocks + 2);     [C]
+temp = *(ptr + 1);        [B]
+temp = *ptr;              [A]
+
+ptr = blocks + 1;         4435
+temp = *ptr;              [B]
+temp = *(ptr + 1);        [C]
+
+ptr = blocks;             4434
+temp = *++ptr;            [B]
+temp = ++*ptr;            [C]
+temp = *ptr++;            [C]
+temp = *ptr;              [C]
