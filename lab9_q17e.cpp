@@ -21,12 +21,12 @@ return n;
 int main(){
         char a[20],o;
         int g;
-        cout<<"Input a string with repeating elements "<<endl;            
+        cout<<"enter a string with repeating elements "<<endl;            
         cin>>a;
-        cout<<"Input the character you want to search "<<endl;
+        cout<<"enter the character you want to find "<<endl;
         cin>>o;
         g = fstrchr(a,o);   
-        cout<<"The no. of times "<<o<<" repeated in the string = "<<g;
+        cout<<"The number of times "<<o<<" repeated in the string = "<<g;
 //terminating program
 return 0;
 }
